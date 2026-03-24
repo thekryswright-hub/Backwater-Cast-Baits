@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fishing Lure Store</title>
+<style>
+body {margin:0;font-family:Arial, sans-serif;background:#0B3C5D;color:white;}
+header {display:flex;justify-content:space-between;align-items:center;padding:20px;background:#072B40;}
+nav a {color:white;margin:0 10px;text-decoration:none;font-weight:bold;}
+.hero {text-align:center;padding:100px 20px;background:#1E90FF;}
+.hero h1 {font-size:48px;margin-bottom:10px;}
+.btn {background:white;color:#0B3C5D;padding:10px 20px;border:none;cursor:pointer;font-weight:bold;}
+.products {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;padding:40px;}
+.card {background:white;color:black;padding:15px;border-radius:10px;text-align:center;}
+.card img {width:100%;border-radius:10px;}
+footer {text-align:center;padding:20px;background:#072B40;}
+</style>
+</head>
+<body>
+
+<header>
+<h2>Your Baits</h2>
+<nav>
+<a href="#">Home</a>
+<a href="#products">Shop</a>
+<a href="#">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h1>Built for the Strike</h1>
+<p>Premium fishing lures that catch more fish.</p>
+<button class="btn" onclick="document.getElementById('products').scrollIntoView()">Shop Now</button>
+</section>
+
+<section id="products" class="products">
+<div class="card">
+<img src="https://via.placeholder.com/200" alt="lure">
+<h3>Crankbait</h3>
+<p>$9.99</p>
+<button class="btn" onclick="addToCart('Crankbait')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200" alt="lure">
+<h3>Spinnerbait</h3>
+<p>$7.99</p>
+<button class="btn" onclick="addToCart('Spinnerbait')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200" alt="lure">
+<h3>Topwater Frog</h3>
+<p>$8.99</p>
+<button class="btn" onclick="addToCart('Topwater Frog')">Add to Cart</button>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Fishing Lure Store</p>
+</footer>
+
+<script>
+function addToCart(item) {
+  alert(item + " added to cart!");
+}
+</script>
+
+</body>
+</html>
